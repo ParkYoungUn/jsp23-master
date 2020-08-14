@@ -1,9 +1,10 @@
+<%-- <jsp:include page="insert.jsp" flush="true"/> --%>
 <%@ page contentType = "text/html; charset=utf-8" %>
 <html>
 <head><title>MEMBER 테이블 레코드 삽입</title></head>
 <body>
 
-<form action="/chap14/insert/insert.jsp" method="post">
+<form action="insert.jsp" method="post">
 <table border="1">
 <tr>
     <td>아이디</td>
@@ -19,6 +20,11 @@
 </tr>
 <tr>
     <td colspan="4"><input type="submit" value="삽입"></td>
+</tr>
+</table>
+<table>
+<tr>
+	<td><a href="../Main_page.jsp">뒤로가기</a></td>
 </tr>
 </table>
 </form>

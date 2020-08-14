@@ -3,7 +3,7 @@
 <head><title>이름 변경폼</title></head>
 <body>
 
-<form action="/chap14/update/update.jsp" method="post">
+<form action="update.jsp" method="post">
 <table border="1">
 <tr>
 	<td>아이디</td>

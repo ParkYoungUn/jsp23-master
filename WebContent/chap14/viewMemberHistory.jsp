@@ -25,8 +25,8 @@
 	try {
 		String jdbcDriver = "jdbc:mysql://localhost:3306/chap14?" +
 							"useUnicode=true&characterEncoding=utf8";
-		String dbUser = "jspexam";
-		String dbPass = "jsppw";
+		String dbUser = "root";
+		String dbPass = "1234";
 		String query =  "select * from MEMBER_HISTORY "+
 						"where MEMBERID = '"+memberID+"'";
 		

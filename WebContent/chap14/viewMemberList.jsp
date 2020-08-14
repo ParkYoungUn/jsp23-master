@@ -25,8 +25,8 @@ MEMBER 테이블의 내용
 	try {
 		String jdbcDriver = "jdbc:mysql://localhost:3306/chap14?" +
 							"useUnicode=true&characterEncoding=utf8";
-		String dbUser = "jspexam";
-		String dbPass = "jsppw";
+		String dbUser = "root";
+		String dbPass = "1234";
 		
 		String query = "select * from MEMBER order by MEMBERID";
 		
@@ -62,6 +62,13 @@ MEMBER 테이블의 내용
 	}
 %>
 </table>
+
+<table>
+<tr>
+	<td><a href="../chap14/Main_page.jsp">main으로 이동</a></td>
+</tr>
+</table>
+
 
 </body>
 </html>

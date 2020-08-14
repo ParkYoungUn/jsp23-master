@@ -4,7 +4,7 @@
 <%@ page import = "java.sql.Connection" %>
 <%@ page import = "java.sql.PreparedStatement" %>
 <%@ page import = "java.sql.SQLException" %>
-
+<jsp:forward page="../Main_page.jsp" />
 <%
 	request.setCharacterEncoding("utf-8");
 	
@@ -17,12 +17,11 @@
 	
 	Connection conn = null;
 	PreparedStatement pstmt = null;
-
 	try {
 		String jdbcDriver = "jdbc:mysql://localhost:3306/chap14?" +
 							"useUnicode=true&characterEncoding=utf8";
-		String dbUser = "jspexam";
-		String dbPass = "jsppw";
+		String dbUser = "root";
+		String dbPass = "1234";
 		
 		conn = DriverManager.getConnection(jdbcDriver, dbUser, dbPass);
 		pstmt = conn.prepareStatement(
