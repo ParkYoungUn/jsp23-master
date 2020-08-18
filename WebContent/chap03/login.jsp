@@ -2,7 +2,7 @@
 <%
 	String id = request.getParameter("memberId");
 	if (id != null && id.equals("madvirus")) {
-		response.sendRedirect("/chap03/index.jsp");
+		response.sendRedirect("index.jsp");
 	} else {
 %>
 <html>
