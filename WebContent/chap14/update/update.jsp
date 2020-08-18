@@ -30,6 +30,8 @@
 		conn = DriverManager.getConnection(jdbcDriver, dbUser, dbPass);
 		stmt = conn.createStatement();
 		updateCount = stmt.executeUpdate(query);
+		
+		
 	} finally {
 		if (stmt != null) try { stmt.close(); } catch(SQLException ex) {}
 		if (conn != null) try { conn.close(); } catch(SQLException ex) {}
