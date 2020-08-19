@@ -17,5 +17,11 @@
 		<param-name>debugLevel</param-name>
 		<param-value>5</param-value>
 	</context-param>
+	
+	<context-param>
+		<description>driver</description>
+		<param-name>driver</param-name>
+		<param-value>com.mysql,jdbc.Driver</param-value>
+	</context-param>
 
 </web-app>

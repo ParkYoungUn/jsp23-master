@@ -5,7 +5,7 @@
 <body>
 
 <%
-	String resourcePath = "/message/notice.txt";
+	String resourcePath = "/chap05/message/notice.txt";
 %>
 자원의 실제 경로:<br>
 <%= application.getRealPath(resourcePath) %>
