@@ -2,7 +2,7 @@
 <html>
 <head><title>회원가입 입력 폼</title></head>
 <body>
-<form action="/chap08/processJoining.jsp" method="post">
+<form action="chap08/processJoining.jsp" method="post">
 <table border="1" cellpadding="0" cellspacing="0">
 <tr>
 	<td>아이디</td>

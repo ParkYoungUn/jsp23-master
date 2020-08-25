@@ -1,8 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?><project-modules id="moduleCoreId" project-version="1.5.0">
+        
     <wb-module deploy-name="jsp23-master">
+                
         <wb-resource deploy-path="/" source-path="/WebContent" tag="defaultRootSource"/>
-        <wb-resource deploy-path="/WEB-INF/classes" source-path="/src"/>
+        <wb-resource deploy-path="/WEB-INF/classes" source-path="/WebContent/chap14/WEB-INF/src"/>
+                
         <property name="context-root" value="jsp23-master"/>
+                
         <property name="java-output-path" value="/jsp23-master/build/classes"/>
+            
     </wb-module>
+    
 </project-modules>

@@ -38,8 +38,8 @@ public class DBCPInit extends HttpServlet {
 			String jdbcUrl = 
 					"jdbc:mysql://localhost:3306/chap14?" + 
 					"useUnicode=true&characterEncoding=utf8";
-			String username = "jspexam";
-			String pw = "jsppw";
+			String username = "root";
+			String pw = "1234"; 
 
 			ConnectionFactory connFactory = 
 					new DriverManagerConnectionFactory(jdbcUrl, username, pw);

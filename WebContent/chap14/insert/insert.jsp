@@ -5,13 +5,12 @@
 <%@ page import = "java.sql.PreparedStatement" %>
 <%@ page import = "java.sql.SQLException" %>
 <jsp:forward page="../Main_page.jsp" />
+
+<jsp:useBean id="memberinfo" class="member.MemberInfo" scope="page"/>
+<jsp:setProperty name="memberinfo" property="*"/>
+
 <%
 	request.setCharacterEncoding("utf-8");
-	
-	String memberID = request.getParameter("memberID");
-	String password= request.getParameter("password");
-	String name = request.getParameter("name");
-	String email = request.getParameter("email");
 	
 	Class.forName("com.mysql.jdbc.Driver");
 	
@@ -26,10 +25,10 @@
 		conn = DriverManager.getConnection(jdbcDriver, dbUser, dbPass);
 		pstmt = conn.prepareStatement(
 			"insert into MEMBER values (?, ?, ?, ?)");
-		pstmt.setString(1, memberID);
-		pstmt.setString(2, password);
-		pstmt.setString(3, name);
-		pstmt.setString(4, email);
+		pstmt.setString(1, memberinfo.getMemberID());
+		pstmt.setString(2, memberinfo.getPassword());
+		pstmt.setString(3, memberinfo.getName());
+		pstmt.setString(4, memberinfo.getEmail());
 		
 		pstmt.executeUpdate();
 	} finally {

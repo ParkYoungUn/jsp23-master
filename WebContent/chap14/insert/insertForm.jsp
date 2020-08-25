@@ -1,4 +1,5 @@
 <%-- <jsp:include page="insert.jsp" flush="true"/> --%>
+
 <%@ page contentType = "text/html; charset=utf-8" %>
 <html>
 <head><title>MEMBER 테이블 레코드 삽입</title></head>
@@ -19,7 +20,7 @@
     <td><input type="text" name="email" size="10"></td>
 </tr>
 <tr>
-    <td colspan="4"><input type="submit" value="삽입"></td>
+    <td colspan="4"><input type="submit" value="등록"></td>
 </tr>
 </table>
 <table>

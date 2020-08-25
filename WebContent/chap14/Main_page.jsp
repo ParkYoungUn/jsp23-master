@@ -25,20 +25,11 @@
 }
 #div4 {
 	flex-direction:column;
-	background-color:pink;
 }
 #div5 {
 	margin-left:1015px;
-	background-color:pink;
 }
-#div6 {
-	float:right;
-	background-color:pink;
-}
-#div7 {
-	float:right;
-	background-color:pink;
-}
+
 #tableA{
 	margin-top:300px;
 	border:1px solid black;
