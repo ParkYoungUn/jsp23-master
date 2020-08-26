@@ -4,6 +4,7 @@
                 
         <wb-resource deploy-path="/" source-path="/WebContent" tag="defaultRootSource"/>
         <wb-resource deploy-path="/WEB-INF/classes" source-path="/WebContent/chap14/WEB-INF/src"/>
+        <wb-resource deploy-path="/WEB-INF/classes" source-path="/WebContent/chap11/WEB-INF/src"/>
                 
         <property name="context-root" value="jsp23-master"/>
                 
